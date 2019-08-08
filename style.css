@@ -40,5 +40,50 @@ header > h1{
 #player1-label{
     position: absolute;
     top: 30px;
-    left: -20px;
+    left: -25px;
+}
+#player2-label{
+    position: absolute;
+    top: 30px;
+    /* left: -25px; */
+    right: -30px;
+}
+
+.res{
+    font-size: 40px;
+    color: white;
+}
+
+.res > p {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+
+.options {
+    margin-top: 50px 0;
+    text-align: center;
+}
+
+.option {
+    border: 4px solid white;
+    border-radius: 50%;
+    margin: 0 15px;
+    padding: 10px;
+    display: inline;
+    transition: all 0.3s ease
+}
+
+.option:hover {
+    cursor: pointer;
+    background: beige;
+}
+
+#action-message {
+    text-align: center;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px;
 }
