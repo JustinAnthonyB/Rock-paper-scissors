@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 306" width="580" height="306">
+	<style>
+		tspan { white-space:pre }
+		.txt0 { font-size: 79px;fill: #991010;font-family: "Duplexide";font-weight: 400 } 
+	</style>
+	<text id="ROCK " style="transform: matrix(3.137,0,0,3.693,0.868,254.73)" >
+		<tspan x="0" y="0" class="txt0">ROCK</tspan>
+	</text>
+</svg>
