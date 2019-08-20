@@ -19,20 +19,30 @@ function game_1(){
 }
 // console.log(game_1())
 
-function win(){
+function convt(letter){
+    if(letter === 'r') return "Rock";
+    if(letter === 'p') return "Paper";
+    if(letter === 's') return "Scissors";
+    return error;
+    
+}
+
+
+function win(p1option,p2option){
     p1_Score++;
     p1Score_span.innerHTML = p1_Score;
-    res_div.innerHTML = "VINNAR";
+    // res_div.innerHTML = "YOU WIN " + "</br>" + convt(p1option) + " beats " + convt(p2option);
+    res_div.innerHTML = `YOU WIN </br>${convt(p1option)} beats ${convt(p2option)}`; //es6 Hooray!
 
 }
-function lose(){
+function lose(p1option,p2option){
     p2_Score++;
     p2Score_span.innerHTML = p2_Score;
-    res_div.innerHTML = "LOSER"
+    res_div.innerHTML = "YOU LOSE " + "</br>" + convt(p2option) + " beats " + convt(p1option);
 
 }
-function drw(){
-    res_div.innerHTML = "TWO LOSERS!!!"
+function drw(p1option){
+    res_div.innerHTML = "DRAW " + "</br>" + "Both picked " + convt(p1option);
 }
 
 
@@ -47,19 +57,19 @@ function game(p1_Option){
         case "rs":
         case "pr":
         case "sp":
-            win();
+            win(p1_Option,computerOption);
             // console.log("Player 1 wins!");
             break
         case "rp":
         case "ps":
         case "sr":
-            lose();
+            lose(p1_Option,computerOption);
             // console.log("Player 2 wins!");
             break;
         case "rr":
         case "pp":
         case "ss":
-            drw();
+            drw(p1_Option);
             // console.log("EVERYONE LOSES!!!!");
             break;    
     }
